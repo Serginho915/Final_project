@@ -1,0 +1,50 @@
+.grid-block{
+  background: violet;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+
+}
+.grid-box{
+  background: $color-primary;
+  padding: 30px;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 20px;
+  border: 2px solid blueviolet;
+  text-align: center;
+}
+.heading{
+  font: 20px/24px $heading-font;
+}
+.box{
+  width: 200px;
+  padding: 20px;
+  margin: 0 10px 20px;
+  background-color: $main-light-color;
+  &.green{
+    background-color: $color-primary;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 20px;
+    height: 30px;
+    background: $blue;
+  }
+  .holder &{
+    color: red;
+  }
+}
+.btn{
+  background: #f00;
+  color: #000;
+  .footer &{
+    margin: 0 0 20px;
+  }
+}
+
+
